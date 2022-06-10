@@ -27,6 +27,9 @@ body {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-links:hover,
 .nav-links:focus {
@@ -57,7 +60,6 @@ body {
 }
 .contact-icon-header {
   margin-right: 10px;
-
 }
 .adress {
   color: #ffffff;
@@ -383,7 +385,7 @@ ul {
   display: flex;
   width: 44px;
   height: 44px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   background-color: #fff;
   border-radius: 50%;
   align-items: center;
@@ -400,7 +402,6 @@ ul {
   width: 20px;
   height: 20px;
   display: flex;
-  
 }
 .lorem-section {
   flex-direction: column;
@@ -454,7 +455,7 @@ ul {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 .client-list-link:hover {
   fill: var(--brand-color);
@@ -464,8 +465,6 @@ ul {
   width: 106px;
   height: 60px;
 }
-
-
 
 .client-list {
   display: flex;
@@ -494,7 +493,7 @@ ul {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  color: #ffffff
+  color: #ffffff;
 }
 .social-list-link-dark:hover {
   background-color: #2196f3;
@@ -513,4 +512,41 @@ ul {
 }
 .social-icon-dark {
   fill: currentcolor;
+}
+
+/* ===== B A C K D R O P + M O D A L ===== */
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
