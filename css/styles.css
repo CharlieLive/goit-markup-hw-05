@@ -378,6 +378,9 @@ ul {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  background-color: #fff;
+  position: relative;
+  z-index: 50;
 }
 .figure-box {
   margin: 0;
