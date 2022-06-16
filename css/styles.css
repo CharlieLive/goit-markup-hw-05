@@ -56,6 +56,9 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02;
 }
+.contact-links-footer:hover {
+  color: var(--brand-color);
+}
 .contact-links:hover,
 .contact-links:focus {
   color: var(--brand-color);
@@ -345,6 +348,7 @@ ul {
 .footer-adress {
   margin-top: 20px;
 }
+
 .section-buttons {
   padding-bottom: 0px;
 }
@@ -526,6 +530,7 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-join-us {
   color: #ffffff;
   font-weight: 700;
