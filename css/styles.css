@@ -44,7 +44,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02;
   fill: #757575;
-  transition-property: color;
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -58,11 +58,15 @@ body {
 }
 .contact-links-footer:hover {
   color: var(--brand-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-links:hover,
 .contact-links:focus {
   color: var(--brand-color);
   fill: var(--brand-color);
+  
 }
 .contact-icon-header {
   margin-right: 10px;
@@ -583,7 +587,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
