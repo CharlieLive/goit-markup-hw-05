@@ -67,7 +67,6 @@ body {
 .contact-links:focus {
   color: var(--brand-color);
   fill: var(--brand-color);
-  
 }
 .contact-icon-header {
   margin-right: 10px;
@@ -440,7 +439,10 @@ ul {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-list-link {
   display: flex;
@@ -452,7 +454,7 @@ ul {
   align-items: center;
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
